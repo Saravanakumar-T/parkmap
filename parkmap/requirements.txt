@@ -4,8 +4,3 @@ osmnx
 networkx
 folium
 streamlit_folium
-geopy
-numpy
-matplotlib
-shapely
-geopandas

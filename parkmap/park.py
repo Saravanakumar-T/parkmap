@@ -17,7 +17,9 @@ uploaded_file = st.sidebar.file_uploader("Upload a CSV file", type=["csv"])
 
 # --- Bounding Box for Chennai ---
 north, south, east, west = 13.14, 12.97, 80.29, 80.08  # Chennai region
-graph = ox.graph_from_bbox(north, south, east, west, network_type="drive", retain_all=True)
+place_name = "Chennai, India"
+graph = ox.graph_from_place(place_name, network_type="drive")
+
 
 # --- Validate Graph ---
 if len(graph.edges) == 0:

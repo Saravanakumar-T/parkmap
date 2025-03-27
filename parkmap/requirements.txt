@@ -1,2 +1,3 @@
 osmnx
 folium
+from streamlit_folium import folium_static
